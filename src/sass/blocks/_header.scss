@@ -56,13 +56,13 @@
 
     &__logo {
         position: relative;
-
+        
         &_section-callback {
-
+            width: 387px;
         }
 
         &_section-info {
-            width: 150px;
+            width: 205px;
         }
 
         &_seciton-par {
@@ -90,22 +90,52 @@
         border-radius: 4px;
     }
 
+
+
     &__info {
-    }
+        padding: 68px 470px 116px;
+        &_title1 {
+            font-weight: 900;
+            font-size: 60px;
+            padding-bottom: 10px;
+        }
 
-    &__info-title1 {
-    }
+        &_title2 {
+            font-weight: 700;
+            font-size: 36px;
+            text-transform:uppercase;
+            padding-bottom: 20px;
 
-    &__info-title2 {
-    }
+        }
 
-    &__info-par1 {
-    }
+        &_par1 {
+            font-weight: 400;
+            font-size: 18px;
+            padding-bottom: 20px;
+            line-height: 24px;
+        }
 
-    &__info-par2 {
+        &_par2 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+        }
     }
 
     &__button {
+        width: 259px;
+        height: 63px;
+        background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+        box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight:400;
+        color:#fff;
+        font-size:18px;
     }
+
+
+
+
 }
 

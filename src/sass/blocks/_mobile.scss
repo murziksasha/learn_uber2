@@ -1,0 +1,114 @@
+.mobile {
+  background: url(../../img/mobile_bg.jpg) center center/cover no-repeat;
+  min-height: 864px;
+  text-align: center;
+  padding: 48px 445px 80px;
+  position: relative;
+  display: block;
+  &__title {
+    font-weight: 700;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #222;
+    margin: 32px 0 10px;
+  }
+  &__par{
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  &__cards {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-flow:wrap;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+
+
+    &_card1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 320px;
+      height: 280px;
+      background: url(../../img/card_1.png) center center/cover no-repeat;
+      margin-bottom: 19px;
+    }
+    &_card2 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 320px;
+      height: 280px;
+      background: url(../../img/card_2.png) center center/cover no-repeat;
+      margin-bottom: 19px;
+    }
+    &_card3 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 320px;
+      height: 280px;
+      background: url(../../img/card_3.png) center center/cover no-repeat;
+      margin-bottom: 19px;
+    }
+    &_card4 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 320px;
+      height: 280px;
+      background: url(../../img/card_4.png) center center/cover no-repeat;
+    }
+    &_card5 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 320px;
+      height: 280px;
+      background: url(../../img/card_5.png) center center/cover no-repeat;
+    }
+    &_card6 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 320px;
+      height: 280px;
+      background: url(../../img/card_6.png) center center/cover no-repeat;
+    }
+  }
+
+
+}
+.plus {
+  width: 29px;
+  height: 29px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 216px;
+  left: 147px;
+  &:hover{
+    color:red;
+  }
+  &:before {
+    content: "+";
+    display: flex; flex-direction: row; align-items: center; justify-content: center;
+    height: 31px;
+    width: 28px;
+    font-size: 26px; line-height: 105px; text-align: center; color: white;
+  }
+
+}
