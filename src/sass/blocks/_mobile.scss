@@ -100,15 +100,37 @@
   position: absolute;
   top: 216px;
   left: 147px;
-  &:hover{
-    color:red;
-  }
   &:before {
-    content: "+";
-    display: flex; flex-direction: row; align-items: center; justify-content: center;
-    height: 31px;
-    width: 28px;
-    font-size: 26px; line-height: 105px; text-align: center; color: white;
+    color: white;
+    content:"";
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color:white;
+    transition: 0.3 all;
+    margin: 0 auto;
+    position: absolute;
+    top:50%;
+    left: 26%;
+    transform: translateY(-50%);
+    
+  }
+  &:after{
+    content:"";
+    display: block;
+    width: 2px;
+    height: 14px;
+    background-color:white;
+    transition: 0.3 all;
+    position: absolute;
+    left: 50%;
+    top: 26%;
+    transform: translateX(-50%);
+  }
+  &:hover{
+    &:before,&:after{
+      background-color: red;
+    }
   }
 
 }
