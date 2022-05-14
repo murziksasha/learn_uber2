@@ -3,10 +3,11 @@
 @import 'libs/icon';
 @import 'base/variables';
 @import 'base/mixins';
-@import 'base/media';
+
 
 *, *::before, *::after{
     box-sizing: border-box;
 }
 
 @import 'blocks/main';
+@import 'base/media';

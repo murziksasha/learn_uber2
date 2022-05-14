@@ -1,9 +1,65 @@
 @media (max-width: 1200px){
+  .header{
+    &__menu {
+      font-size: 19px;
+      &_list-item{
+          &:not(:first-child)::before{
+              padding-right: 19px;  
+      }
+    }
+    &__logo{
+      padding: 0 446px;
+      &_section-callback {
+        width: 450px;
+      }
+      &_seciton-par{
+        font-size: 16px;
+      }
+      &-btn{
+        width: 200px;
+      }
+    }
+    &__info{
+      p{
+        font-size: 28px;
+      }
+    }
+  }
+  }
 
+  .world{
+    min-height: 487px;
+    &__flex{
+      min-height: 100vh;
+    }
+  }
+
+  
 }
 
 @media (max-width: 991px){
-
+  .header{
+    &__menu {
+      font-size: 19px;
+    }
+    &__logo{
+      padding: 0 446px;
+      &_section-callback {
+        width: 450px;
+      }
+      &_seciton-par{
+        font-size: 16px;
+      }
+      &-btn{
+        width: 200px;
+      }
+    }
+    &__info{
+      p{
+        font-size: 28px;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px){
