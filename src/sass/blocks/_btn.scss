@@ -16,3 +16,11 @@
     @include hov;
   }
 }
+
+@media (max-width: 1200px){
+  .btn{
+    font-size: 15px;
+    width: 175px;
+    height: 40px;
+  }
+}

@@ -25,15 +25,72 @@
       }
     }
   }
+}
+
+  .reason{
+    padding: 27px 398px 64px 395px;
   }
 
-  .world{
-    min-height: 487px;
-    &__flex{
-      min-height: 100vh;
+  .mobile{
+    &__par{
+      font-size: 19px;
     }
   }
 
+  .choice {
+    min-height: 795px;
+
+    &__title{
+      font-size: 42px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__img {
+      top: 227px;
+      left: 134px;
+      width: 850px;
+      height: 550px;
+    }
+
+    &__par {
+      top: 708px;
+      left:375px;
+      font-size: 23px;
+      line-height: 28px;
+    }
+  }
+  .require{
+    &__title{
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+    &__lists{
+      font-size: 25px;
+      color:black;
+      
+    }
+    &__tabs{
+      justify-content: space-between;
+    }
+    &__subtitile{
+      top: 418px;
+      left: -8px;
+      font-size: 21px;
+    }
+    
+
+  }
+
+  .world{
+    min-height: 100%;
+    &__flex{
+      min-height: 427px;
+    }
+  }
   
 }
 
@@ -60,12 +117,72 @@
       }
     }
   }
+
 }
 
 @media (max-width: 767px){
- 
+  .header{
+    .hamburger{
+      display: block;
+      position: absolute;
+      right: 94px;
+      top: 4%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 12px;
+      span{
+        display: block;
+        height: 3px;
+        width: 65px;
+        background-color: #fff;
+        transition: all .5s ease;
+        &:not(:first-child){
+          margin-top: 7px;
+        }
+      }
+        &_active{
+          span{
+            margin-bottom: -9px;
+            &:nth-child(1){
+              transform: rotate(-45deg);
+            }
+            &:nth-child(2){
+              display: none;
+            }
+            &:nth-child(3){
+              transform: rotate(45deg);
+            }
+          }
+        }
+
+    }
+    &__menu{
+      position: relative;
+      top:0;
+      left: -100%;        //скрывает меню
+      padding: 20px 15px;
+      background: none;
+      transition:.6s ease;
+      &_active{
+        left:0; //появляется меню при доб класса
+      }
+      &_list{
+        position: fixed;
+        z-index: 10;
+        height: 275vh;
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 45px;
+        background-color: rgba(0, 0, 0, .8);
+
+      }
+    }
+  }
 }
 
 @media (max-width: 575px){
-   
+  
 }

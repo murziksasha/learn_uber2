@@ -5,7 +5,9 @@
     color:#fff;
     background: url(../../img/uber_bg.jpg) center center/cover no-repeat;
     min-height: 850px;
-    
+    .hamburger{
+        display: none;
+    }
 
     &__menu {
         padding: 0 450px;
